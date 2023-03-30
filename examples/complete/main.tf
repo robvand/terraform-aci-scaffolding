@@ -1,8 +1,9 @@
-module "aci_scaffolding" {
-  source  = "netascode/scaffolding/aci"
-  version = ">= 0.0.1"
-
-  name        = "ABC"
-  alias       = "ABC-ALIAS"
-  description = "My Description"
+module "ospf_route_summarization_policy" {
+  source           = "netascode/ospf_route_summarization_policy"
+  version          = ">= 0.1.0"
+  name             = "ABC"
+  tenant           = "TEN1"
+  description      = "My OSPF Route Summarization Policy"
+  interAreaEnabled = "true"
+  cost             = "300"
 }

@@ -1,9 +1,9 @@
 output "dn" {
-  value       = aci_rest_managed.fvTenant.id
-  description = "Distinguished name of `fvTenant` object."
+  value       = aci_rest_managed.ospfRtSummPol.id
+  description = "Distinguished name of `ospfRtSummPol` object."
 }
 
 output "name" {
-  value       = aci_rest_managed.fvTenant.content.name
-  description = "Tenant name."
+  value       = aci_rest_managed.ospfRtSummPol.content.name
+  description = "OSPF route summarization policy name."
 }
